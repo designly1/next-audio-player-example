@@ -14,8 +14,13 @@
     "eslint-config-next": "13.3.0",
     "next": "13.3.0",
     "postcss": "8.4.22",
+    "raf": "^3.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.1"
+    "react-howler": "^5.2.0",
+    "react-icons": "^4.8.0",
+    "react-spinners": "^0.13.8",
+    "tailwindcss": "3.3.1",
+    "uuid": "^9.0.0"
   }
 }

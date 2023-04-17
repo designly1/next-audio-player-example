@@ -2,26 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+input:checked ~ .dot {
+  transform: translateX(18px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+input:focus ~ .dot {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+input:checked ~ .block {
+  background-color: #14d521;
+}
+
+.dot {
+  transition: transform 0.2s ease-in-out;
+}
+
+.block {
+  transition: background-color 0.2s ease-in-out;
 }
